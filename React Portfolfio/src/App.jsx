@@ -6,6 +6,7 @@ import './styles/Navbar.css';
 import Header from './components/Header';
 import './styles/Header.css';
 import Footer from './components/footer';
+import Typewriter from 'typewriter-effect';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div>
     <Nav />
     <Header />
+    <Typewriter />
     <Footer />
   </div>
   )
