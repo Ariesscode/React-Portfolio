@@ -64,7 +64,7 @@ export default function Nav() {
           <a style={styles.navbarA} href="#">Resume</a>
         </li>
       </ul>
-      <a style={styles.navbarContact} href="#">
+      <a className="animated-header" style={styles.navbarContact} href="#">
       <TfiEmail />
 
       </a>
