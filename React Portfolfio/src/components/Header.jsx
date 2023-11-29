@@ -1,35 +1,33 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { GrGithub } from "react-icons/gr";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 
 import '../styles/Header.css';
 
 
 const styles = {
   headerStyle: {
-    background: 'lightorange',
-    width: '70%',
-    marginTop: '5px',
-    height: '300'
-  },
-  headingStyle: {
-    fontSize: '20px',
-  },
+    display: 'flex'
+  }
+  
  
 };
 
 
 function Header() {
   return (
-    <header>
+    <header style={styles.headerStyle}>
     <div className="github-link">
     <GrGithub />
     </div>
     <div className="linkedIn-link">
-      <i className="bi bi-linkedin"></i>
+    <FaLinkedin />
+
     </div>
     <div className="repo-link">
-      <i className="bi bi-git-repo"></i>
+    <FaGitAlt />
     </div>
   </header>
 );

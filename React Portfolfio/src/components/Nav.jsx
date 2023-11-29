@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { LuMailPlus } from "react-icons/lu";
+import { TfiEmail } from "react-icons/tfi";
 
 export default function Nav() {
   const styles = {
@@ -65,7 +65,7 @@ export default function Nav() {
         </li>
       </ul>
       <a style={styles.navbarContact} href="#">
-      <LuMailPlus />
+      <TfiEmail />
 
       </a>
 
