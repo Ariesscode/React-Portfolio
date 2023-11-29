@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { GrGithub } from "react-icons/gr";
 
 import '../styles/Header.css';
 
@@ -23,7 +23,7 @@ function Header() {
   return (
     <header>
     <div className="github-link">
-    <FontAwesomeIcon icon="fa-brands fa-github" />
+    <GrGithub />
     </div>
     <div className="linkedIn-link">
       <i className="bi bi-linkedin"></i>
