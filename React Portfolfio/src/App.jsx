@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+
 import Nav from './components/Nav';
 import './styles/Navbar.css';
 import Header from './components/Header';
@@ -8,15 +9,22 @@ import Typewriter from 'typewriter-effect';
 
 function App() {
   const [isTyping, setIsTyping] = useState(true);
-
   const handleTypingComplete = () => {
-    // Set a delay before restarting the typing animation
-    setTimeout(() => {
-      setIsTyping(false);
+  setIsTyping(false)
+  }
+  useEffect(() => {
+    const restartTyping = () => {
       setIsTyping(true);
-    }, 1000);
-  };
+    };
 
+    if (!isTyping) {
+      // Set a delay before restarting the typing animation
+      const timeoutId = setTimeout(restartTyping, 2000);
+
+      // Clear the timeout to avoid potential memory leaks
+      return () => clearTimeout(timeoutId);
+    }
+  }, [isTyping]);
   return (
     <div>
       <Nav />
@@ -25,6 +33,8 @@ function App() {
       <div className="text-effect">
       {isTyping && (
         <Typewriter 
+        options={{ loop: true }}
+
           onInit={(typewriter) => {
             typewriter.typeString("Hi, my name is Abigail!")
               .pauseFor(2000)
@@ -38,11 +48,14 @@ function App() {
               .typeString("By the way, thanks for stopping by :)")
               .deleteAll()
               .start();
+             
+   
           }}
-          onComplete={handleTypingComplete}
+        
         />
-      </div>
-      
+        
+        )}
+    </div>
     </div>
   );
 }
