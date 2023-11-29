@@ -1,33 +1,23 @@
-export default function Nav() {
-  const linkStyle = { border: '1px black', padding: '5px' };
 
+export default function Nav() {
+ 
   return (
-    <nav className="main-header-menu">
-      <section
-        style={{
-          display: 'flex',
-          fontFamily: 'helvetica',
-          flexDirection: 'row',
-          alignItems: 'flex-start',
-          justifyContent: 'flex-start',
-        }}
-      >
-        <div style={linkStyle}>
+    <nav className="navbar">
+        <div>
           <a href="#">Home</a>
         </div>
-        <div style={linkStyle}>
+        <div>
           <a href="#">About me</a>
         </div>
-        <div style={linkStyle}>
+        <div>
           <a href="#">Projects</a>
         </div>
-        <div style={linkStyle}>
+        <div>
           <a href="#">Resume</a>
         </div>
-        <div style={linkStyle}>
+        <div>
           <a href="#">Contact</a>
         </div>
-      </section>
     </nav>
   );
 }

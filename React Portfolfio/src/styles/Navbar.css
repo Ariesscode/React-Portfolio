@@ -1,0 +1,15 @@
+.navbar {
+  border: 1px black;
+  padding: 5px;
+  height: 60px;
+  color:blue;
+  background-color: black;
+}
+
+.navbar a {
+  /* color: white; */
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin: 5px;
+  line-height: 3;
+}

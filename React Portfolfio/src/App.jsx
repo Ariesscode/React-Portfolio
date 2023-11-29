@@ -2,12 +2,9 @@
 // import reactLogo from './components/react.svg'
 // import viteLogo from '/vite.svg'
 import Nav from './components/Nav';
-
-// import './App.css'
+import './styles/Navbar.css';
 
 function App() {
-  
-
   return (
     <div>
     <Nav />
