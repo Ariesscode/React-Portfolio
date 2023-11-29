@@ -22,3 +22,21 @@
   text-decoration: none;
   
 }
+
+@keyframes moveContact {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px); 
+  }
+}
+
+.animated-header {
+  display: inline-block;
+  animation: moveContact 2.5s infinite; 
+}
