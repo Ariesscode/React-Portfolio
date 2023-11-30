@@ -71,7 +71,7 @@ function Home() {
               imageUrl={portfolioImage}
               description="It's just the beginning! Thanks for stopping by to check out my portfolio."
               buttonText="Read more"
-              buttonUrl="https://example.com" //url for button to go to about page 
+              buttonUrl="/About" //url for button to go to about page 
               className="custom-card"
             />
           </div>
