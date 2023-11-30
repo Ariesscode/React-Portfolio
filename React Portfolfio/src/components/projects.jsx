@@ -1,5 +1,7 @@
 import React from 'react';
 import ProjectCard from '../components/project-cards'; // Adjust the path
+import projectImage from '../../../Assets/project2.png';
+import '../styles/projects.css';
 
 function Projects() {
     return (
@@ -15,11 +17,12 @@ function Projects() {
                                 </div>
 
                                 <ProjectCard
-                                    imageUrl="path/to/your/image.jpg"
-                                    title="Fully Responsive"
+                                    imageUrl={projectImage}
+                                    title="F2F Blog App"
                                     description="This theme will look great on any device, no matter the size!"
                                     linkUrl="https://example.com/project1"
                                     linkName="name"
+                                    repoLink="https://github.com/newprice247/F2F-Blog"
                                 />
 
 
@@ -31,11 +34,12 @@ function Projects() {
                                     <i className="bi-layers m-auto text-primary" />
                                 </div>
                                 <ProjectCard
-                                    imageUrl="path/to/your/image.jpg"
-                                    title="Fully Responsive"
+                                    imageUrl="."
+                                    title="F2F Blog App"
                                     description="This theme will look great on any device, no matter the size!"
                                     linkUrl="https://example.com/project1"
                                     linkName="Note taker"
+                                    repoLink="https://github.com/newprice247/F2F-Blog"
                                 />
                             </div>
                         </div>
@@ -45,9 +49,9 @@ function Projects() {
                                     <i className="bi-terminal m-auto text-primary" />
                                 </div>
                                 <ProjectCard
-                                    imageUrl="path/to/your/image.jpg"
-                                    title="Fully Responsive"
-                                    description="This theme will look great on any device, no matter the size!"
+                                    imageUrl={projectImage}
+                                    title="F2F Blog App"
+                                    description="Social app for web developers to share their ideas, snippets of code, and add resources!"
                                     linkUrl="https://f2f-blog-ad8f414d0b59.herokuapp.com/"
                                     linkName="F2F Blog App"
                                     repoLink="https://github.com/newprice247/F2F-Blog"
