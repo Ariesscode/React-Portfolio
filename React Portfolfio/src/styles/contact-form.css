@@ -2,10 +2,9 @@
     max-width: 400px;
     margin: auto;
     padding: 20px;
-    /* background-color: #f4f4f4;
-    border: 1px solid #ddd; */
+
     border-radius: 5px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
 
   
@@ -17,7 +16,7 @@
 }
 
 .contact-form input[type="submit"] {
-  background-color: #4caf50;
+  background-color: rgba(0, 0, 255, 0.692);
   color: #fff;
   cursor: pointer;
 }
@@ -34,3 +33,13 @@
 /* .contact-info {
     display: flex;
 } */
+
+.additional-links {
+    text-align: center;
+}
+
+
+.contact-info {
+    text-align: center;
+    margin-top: 50px;
+}

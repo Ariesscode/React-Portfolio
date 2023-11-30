@@ -26,6 +26,7 @@ export const Contact = () => {
     return (
       <div className='contact-form-edit'>
         <div className="contact-info">
+          <h1>Contact me</h1>
           <p>For inquiries, contact us at:</p>
           <p><FaPhoneAlt />
 Phone: (407) 690-0081</p>
