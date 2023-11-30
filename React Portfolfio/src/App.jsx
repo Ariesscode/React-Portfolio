@@ -7,7 +7,9 @@ import './styles/Header.css';
 import Footer from './components/footer'; // Corrected import
 import Typewriter from 'typewriter-effect';
 import './styles/typewriter.css';
-// import CustomCard from './components/project-cards';
+import CustomCard from './components/profile-image';
+import portfolioImage from '../../Assets/portfolio.jpeg';
+
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import AboutMe from './AboutMe';
 // import Contact from './Contact';
@@ -35,7 +37,9 @@ function App() {
     <div>
       <Nav />
       <Footer />
-      <div className="text-effect" style={{ maxHeight: '600px', maxWidth: '600px', overflow: 'hidden' }}>
+      <div style={{ display: 'flex' }}>
+
+      <div className="text-effect" style={{ maxHeight: '700px', maxWidth: '620px', overflow: 'hidden' }}>
       {isTyping && (
         <Typewriter 
         options={{ loop: true, delay: 50 }}
@@ -52,11 +56,11 @@ function App() {
               .pauseFor(2000)
               .deleteAll()
               .typeString('<span class="typewriter">Front-End skills...</span>')
-              .pauseFor(1000)
+              .pauseFor(2000)
               .deleteAll()
               
               .typeString('<span class="typewriter">Back-End skills...</span>')
-              .pauseFor(1000)
+              .pauseFor(2000)
               .deleteAll()
               
               .typeString('<span class="typewriter">MONGO, MYSQL, NODE</span>')
@@ -82,8 +86,20 @@ function App() {
         />
         
         )}
+        
+    </div>
+
+    <div className="fixed-card" style={{ position: 'fixed', top: '100px', right: '80px'
+   }}>
+            <CustomCard 
+            imageUrl={portfolioImage} 
+              buttonText="Read more"
+              buttonUrl="https://example.com"
+            />
+          </div>
     </div>
     </div>
+    
   );
 }
 

@@ -1,8 +1,6 @@
 .typewriter {
-    /* display:flex; */
-    background-color:rgba(0, 0, 0, 0.158);
-    /* text-align:center; */
-    /* width:400px; */
+    background-color:rgba(0, 0, 0, 0.075);
+  margin-top: 40px;
     font-size:100px;
     color:rgba(0, 0, 0, 0.603);
     
@@ -10,6 +8,18 @@
 
 .text-effect {
   display:flex;
-  flex-wrap: wrap;
-
+  margin-right: 60px;
+  margin-top: 30px;
+  margin-left: 5px;
+ 
 }
+
+
+
+/* .profile {
+position: fixed;
+  right: 300px;
+  margin-left: 50px;
+   
+} */
+
