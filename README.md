@@ -1,6 +1,10 @@
 # 20 React: Abigail Burtley React Portfolio
 
 ## Deployed APP (Netlify)
+https://abigailburtley.netlify.app
+
+## GitHub Repo
+https://github.com/Ariesscode/React-Portfolio
 
 ## Your Task
 
