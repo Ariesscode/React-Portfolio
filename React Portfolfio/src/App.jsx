@@ -39,6 +39,8 @@ function App() {
       <div className="app-container">
         <Nav />
         <Footer />
+        <Switch>
+        <Route path="/" exact>
         <div style={{ display: 'flex' }}>
           <div className="text-effect" style={{ maxHeight: '700px', maxWidth: '620px', overflow: 'hidden' }}>
             {isTyping && (
@@ -88,15 +90,17 @@ function App() {
               className="custom-card"
             />
           </div>
-          <Switch>
+        </div>
+        </Route>
+          
             <Route path="/About" component={About} />
             <Route path="/projects" component={Projects} />
             <Route path="/Contact" component={Contact} />
             <Route path="/Resume" component={Resume} />
           </Switch>
-        </div>
+    
       </div>
-    </Router>
+      </Router>
   );
 }
 
