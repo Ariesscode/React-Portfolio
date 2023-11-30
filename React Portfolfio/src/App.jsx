@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Nav from './components/Nav';
 import './styles/Navbar.css';
@@ -10,10 +11,10 @@ import './styles/typewriter.css';
 import CustomCard from './components/profile-image';
 import portfolioImage from '../../Assets/portfolio.jpeg';
 
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import AboutMe from './AboutMe';
-// import Contact from './Contact';
-// import Resume from './Resume';
+import About from './components/About';
+import Portfolio from './components/projects';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
   const [isTyping, setIsTyping] = useState(true);
