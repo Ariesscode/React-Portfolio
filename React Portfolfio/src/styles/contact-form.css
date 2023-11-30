@@ -1,0 +1,31 @@
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: purple;
+}
+
+.contact-form label {
+    display:block;
+    margin-bottom: 5px;
+}
