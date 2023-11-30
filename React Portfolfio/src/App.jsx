@@ -6,6 +6,7 @@ import './styles/Navbar.css';
 import './styles/Header.css';
 import Footer from './components/footer'; // Corrected import
 import Typewriter from 'typewriter-effect';
+import './styles/typewriter.css';
 // import CustomCard from './components/project-cards';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import AboutMe from './AboutMe';
@@ -33,24 +34,45 @@ function App() {
   return (
     <div>
       <Nav />
-      {/* <Header /> */}
       <Footer />
-      <div className="text-effect">
+      <div className="text-effect" style={{ maxHeight: '600px', maxWidth: '600px', overflow: 'hidden' }}>
       {isTyping && (
         <Typewriter 
-        options={{ loop: true }}
+        options={{ loop: true, delay: 50 }}
 
           onInit={(typewriter) => {
-            typewriter.typeString("Hi, my name is Abigail!")
+            typewriter.typeString('<span class="typewriter">Hi, my name is Abigail.</span>')
+            .pauseFor(2000)
+            .deleteAll()
+              
+              .typeString('<span class="typewriter">Full stack MERN Developer...</span>')
+              .pauseFor(3000)
+              .deleteAll()
+              .typeString('<span class="typewriter">Latest projects and collaborations.</span>')
               .pauseFor(2000)
               .deleteAll()
-              .typeString("Full stack MERN Developer")
-              .deleteAll()
+              .typeString('<span class="typewriter">Front-End skills...</span>')
               .pauseFor(1000)
-              .typeString("Check out some of my latest projects!")
               .deleteAll()
+              
+              .typeString('<span class="typewriter">Back-End skills...</span>')
               .pauseFor(1000)
-              .typeString("By the way, thanks for stopping by :)")
+              .deleteAll()
+              
+              .typeString('<span class="typewriter">MONGO, MYSQL, NODE</span>')
+              .pauseFor(3000)
+              .deleteAll()
+            
+              .typeString('<span class="typewriter">CSS, EXPRESS, HTML,</span>')
+              .pauseFor(3000)
+              .deleteAll()
+              
+              .typeString('<span class="typewriter">BOOTSTRAP...</span>')
+              .pauseFor(3000)
+              .deleteAll()
+    
+              .typeString('<span class="typewriter">JavaScript, REACT...</span>')
+              .pauseFor(2000)
               .deleteAll()
               .start();
              

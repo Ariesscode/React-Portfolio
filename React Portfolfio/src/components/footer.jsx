@@ -4,8 +4,9 @@ import Header from './Header';
 const Footer = () => {
   return (
     <footer>
+        <Header />
       <p>&copy; 2023 Abigail Burtley Portfolio</p>
-      <Header />
+      
     </footer>
   );
 }

@@ -1,0 +1,15 @@
+.typewriter {
+    /* display:flex; */
+    background-color:rgba(0, 0, 0, 0.158);
+    /* text-align:center; */
+    /* width:400px; */
+    font-size:100px;
+    color:rgba(0, 0, 0, 0.603);
+    
+}
+
+.text-effect {
+  display:flex;
+  flex-wrap: wrap;
+
+}
