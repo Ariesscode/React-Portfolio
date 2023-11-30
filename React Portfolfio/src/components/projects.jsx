@@ -18,7 +18,8 @@ function Projects() {
                                     imageUrl="path/to/your/image.jpg"
                                     title="Fully Responsive"
                                     description="This theme will look great on any device, no matter the size!"
-                                    button="Click here!"
+                                    linkUrl="https://example.com/project1"
+                                    linkName="name"
                                 />
 
 
@@ -33,7 +34,8 @@ function Projects() {
                                     imageUrl="path/to/your/image.jpg"
                                     title="Fully Responsive"
                                     description="This theme will look great on any device, no matter the size!"
-                                    button="Click here!"
+                                    linkUrl="https://example.com/project1"
+                                    linkName="Note taker"
                                 />
                             </div>
                         </div>
@@ -46,7 +48,9 @@ function Projects() {
                                     imageUrl="path/to/your/image.jpg"
                                     title="Fully Responsive"
                                     description="This theme will look great on any device, no matter the size!"
-                                    button="Click here!"
+                                    linkUrl="https://f2f-blog-ad8f414d0b59.herokuapp.com/"
+                                    linkName="F2F Blog App"
+                                    repoLink="https://github.com/newprice247/F2F-Blog"
                                 />
                             </div>
                         </div>

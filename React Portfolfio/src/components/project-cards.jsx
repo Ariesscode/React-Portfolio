@@ -1,7 +1,8 @@
 // CustomCard.jsx
 import React from 'react';
+import { TbReportSearch } from "react-icons/tb";
 
-const ProjectCard = ({ imageUrl, title, description, button }) => {
+const ProjectCard = ({ imageUrl, title, description, linkUrl, linkName, repoLink }) => {
   return (
     <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
       <div className="features-icons-icon d-flex">
@@ -10,7 +11,12 @@ const ProjectCard = ({ imageUrl, title, description, button }) => {
       <h3>{title}</h3>
       <p className="lead mb-0">{description}</p>
       <div className="project-button">
-        <button>{button}</button>
+      <a href={linkUrl}>{linkName}</a>
+      </div>
+      <div className="github-repo">
+        <a href={repoLink} target="_blank" rel="noopener noreferrer">
+          <TbReportSearch />  
+        </a>
       </div>
     </div>
   );
