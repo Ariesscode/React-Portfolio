@@ -27,17 +27,17 @@ const Header = () => {
   return (
     <header style={styles.headerStyle}>
       <div className="github-link">
-        <a href="/github" target="_blank" rel="noopener noreferrer">
+        <a href="/https://github.com/Ariesscode" target="_blank" rel="noopener noreferrer">
           <GrGithub style={styles.iconStyle} />
         </a>
       </div>
       <div className="linkedIn-link">
-        <a href="/linkedin" target="_blank" rel="noopener noreferrer">
+        <a href="/www.linkedin.com/in/abigail-burtley-a401ba2a2" target="_blank" rel="noopener noreferrer">
           <FaLinkedin style={styles.iconStyle}/>
         </a>
       </div>
       <div className="repo-link">
-        <a href="/repo" target="_blank" rel="noopener noreferrer">
+        <a href="/https://github.com/Ariesscode/React-Portfolio" target="_blank" rel="noopener noreferrer">
           <FaGitAlt style={styles.iconStyle}/>
         </a>
       </div>
