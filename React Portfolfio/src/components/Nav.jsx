@@ -1,7 +1,10 @@
+
+
 import React from 'react';
 import '../styles/Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TfiEmail } from "react-icons/tfi";
+import { Link } from 'react-router-dom';
 
 
 export default function Nav() {
@@ -52,23 +55,25 @@ export default function Nav() {
     <nav style={styles.navbar}>
       <ul style={styles.navbarList}>
         <li style={styles.navbarItem}>
+        <Link style={styles.navbarA} to="/">Home</Link>
+        </li>
+        <li style={styles.navbarItem}>
+        <Link style={styles.navbarA} to="/About">About me</Link>
+        </li>
+        <li style={styles.navbarItem}>
+        <Link style={styles.navbarA} to="/projects">Projects</Link>
 
-          <a style={styles.navbarA} href="#">Home</a>
         </li>
         <li style={styles.navbarItem}>
-          <a style={styles.navbarA} href="#">About me</a>
-        </li>
-        <li style={styles.navbarItem}>
-          <a style={styles.navbarA} href="#">Projects</a>
-        </li>
-        <li style={styles.navbarItem}>
-          <a style={styles.navbarA} href="#">Resume</a>
+        <Link style={styles.navbarA} to="/resume">Resume</Link>
+
         </li>
       </ul>
-      <a className="animated-header" style={styles.navbarContact} href="#">
+     <Link className="animated-header" style={styles.navbarContact} to="Contact">
       <TfiEmail />
 
-      </a>
+      </Link>
+
 
     </nav>
   );

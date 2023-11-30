@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
 import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home';
@@ -91,11 +92,11 @@ function App() {
         </div>
        
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route index element={<Home />} />
+            <Route path="/About" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resume" element={<Resume />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Resume" element={<Resume />} />
           </Routes>
      
       </div>
