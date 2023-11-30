@@ -4,10 +4,12 @@ import React from 'react';
 import '../styles/Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TfiEmail } from "react-icons/tfi";
-import { Link } from 'react-router-dom';
+import { Link, useLocation} from 'react-router-dom';
 
 
 export default function Nav() {
+  const currentPage = useLocation().pathname;
+
   const styles = {
     navbar: {
       padding: '5px',
@@ -55,17 +57,17 @@ export default function Nav() {
     <nav style={styles.navbar}>
       <ul style={styles.navbarList}>
         <li style={styles.navbarItem}>
-        <Link style={styles.navbarA} to="/">Home</Link>
+        <Link className={currentPage === '/' ? 'nav-link active' : 'nav-link'} style={styles.navbarA} to="/">Home</Link>
         </li>
         <li style={styles.navbarItem}>
-        <Link style={styles.navbarA} to="/About">About me</Link>
+        <Link className={currentPage === '/About' ? 'nav-link active' : 'nav-link'} style={styles.navbarA} to="/About">About me</Link>
         </li>
         <li style={styles.navbarItem}>
-        <Link style={styles.navbarA} to="/projects">Projects</Link>
+        <Link className={currentPage === '/projects' ? 'nav-link active' : 'nav-link'} style={styles.navbarA} to="/projects">Projects</Link>
 
         </li>
         <li style={styles.navbarItem}>
-        <Link style={styles.navbarA} to="/resume">Resume</Link>
+        <Link className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'} style={styles.navbarA} to="/resume">Resume</Link>
 
         </li>
       </ul>
