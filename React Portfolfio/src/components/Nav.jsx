@@ -3,6 +3,7 @@ import '../styles/Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TfiEmail } from "react-icons/tfi";
 
+
 export default function Nav() {
   const styles = {
     navbar: {

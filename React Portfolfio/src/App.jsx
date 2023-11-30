@@ -2,10 +2,15 @@ import React, {useState, useEffect} from 'react';
 
 import Nav from './components/Nav';
 import './styles/Navbar.css';
-import Header from './components/Header';
+// import Header from './components/Header';
 import './styles/Header.css';
 import Footer from './components/footer'; // Corrected import
 import Typewriter from 'typewriter-effect';
+// import CustomCard from './components/project-cards';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import AboutMe from './AboutMe';
+// import Contact from './Contact';
+// import Resume from './Resume';
 
 function App() {
   const [isTyping, setIsTyping] = useState(true);
@@ -28,7 +33,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <Header />
+      {/* <Header /> */}
       <Footer />
       <div className="text-effect">
       {isTyping && (

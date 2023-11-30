@@ -3,34 +3,46 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
-
 import '../styles/Header.css';
 
 
 const styles = {
   headerStyle: {
-    display: 'flex'
+    display: 'flex',
+    size: '20px',
+    color: 'purple'
+  },
+ iconStyle: {
+    fontSize: '2em', 
+    marginRight: '5px'
   }
   
  
 };
 
 
-function Header() {
+
+
+const Header = () => {
   return (
     <header style={styles.headerStyle}>
-    <div className="github-link">
-    <GrGithub />
-    </div>
-    <div className="linkedIn-link">
-    <FaLinkedin />
-
-    </div>
-    <div className="repo-link">
-    <FaGitAlt />
-    </div>
-  </header>
-);
-}
+      <div className="github-link">
+        <a href="/github" target="_blank" rel="noopener noreferrer">
+          <GrGithub style={styles.iconStyle} />
+        </a>
+      </div>
+      <div className="linkedIn-link">
+        <a href="/linkedin" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin style={styles.iconStyle}/>
+        </a>
+      </div>
+      <div className="repo-link">
+        <a href="/repo" target="_blank" rel="noopener noreferrer">
+          <FaGitAlt style={styles.iconStyle}/>
+        </a>
+      </div>
+    </header>
+  );
+};
 
 export default Header;
