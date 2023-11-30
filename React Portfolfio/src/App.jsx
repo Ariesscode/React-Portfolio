@@ -94,10 +94,10 @@ function App() {
         
         </Route>
 
-<Route path="/about" component={About} />
-<Route path="/portfolio" component={Portfolio} />
-<Route path="/contact" component={Contact} />
-<Route path="/resume" component={Resume} />
+<Route path="/About" component={About} />
+<Route path="/projects" component={Projects} />
+<Route path="/Contact" component={Contact} />
+<Route path="/Resume" component={Resume} />
 </Switch>
         <div className="fixed-card" style={{
           position: 'fixed', top: '100px', right: '80px'
