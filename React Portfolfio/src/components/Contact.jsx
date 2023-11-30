@@ -8,10 +8,11 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 
 export const Contact = () => {
-  const form = useRef();
+  const form = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
 
     emailjs.sendForm('service_msxzsgl', 'template_hsn8k2r', form.current, '0F7q40iXe__uTE6yp')
       .then((result) => {
@@ -20,6 +21,9 @@ export const Contact = () => {
       }, (error) => {
           console.log(error.text);
       });
+      if (form.current) {
+        form.current.reset();
+      }
   };
 
   
