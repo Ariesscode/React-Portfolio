@@ -34,11 +34,13 @@ function App() {
     }
   }, [isTyping]);
   return (
+    <Router>
     <div className="app-container">
       <Nav />
       <Footer />
       <div style={{ display: 'flex' }}>
-
+      <Switch>
+            <Route path="/" exact>
         <div className="text-effect" style={{ maxHeight: '700px', maxWidth: '620px', overflow: 'hidden' }}>
           {isTyping && (
             <Typewriter
@@ -88,7 +90,14 @@ function App() {
           )}
 
         </div>
+        
+        </Route>
 
+<Route path="/about" component={About} />
+<Route path="/portfolio" component={Portfolio} />
+<Route path="/contact" component={Contact} />
+<Route path="/resume" component={Resume} />
+</Switch>
         <div className="fixed-card" style={{
           position: 'fixed', top: '100px', right: '80px'
         }}>
@@ -102,7 +111,7 @@ function App() {
         </div>
       </div>
     </div>
-
+    </Router>
   );
 }
 
