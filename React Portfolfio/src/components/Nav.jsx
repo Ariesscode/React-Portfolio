@@ -14,7 +14,7 @@ export default function Nav() {
     navbar: {
       padding: '5px',
       height: '60px',
-      backgroundColor: 'lightgrey',
+      backgroundColor: '#333',
       display: 'flex',
       justifyContent: 'end',
       alignItems: 'center',

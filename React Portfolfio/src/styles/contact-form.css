@@ -5,7 +5,11 @@
     border-radius: 5px;
     /* margin-top: 50px; */
   }
+.contact-icon {
+    padding-right:5px;
+    font-size: 18px;
 
+}
   
 .contact-form input,
 .contact-form textarea {
@@ -41,4 +45,8 @@
 .contact-info {
     text-align: center;
     margin-top: 50px;
+}
+
+.contact-form-edit {
+    margin-bottom:  20vh;
 }

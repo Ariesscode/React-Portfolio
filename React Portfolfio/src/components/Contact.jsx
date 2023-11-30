@@ -28,9 +28,9 @@ export const Contact = () => {
         <div className="contact-info">
           <h1>Contact me</h1>
           <p>For inquiries, contact us at:</p>
-          <p><FaPhoneAlt />
+          <p><FaPhoneAlt className='contact-icon' />
 Phone: (407) 690-0081</p>
-          <p><SiMinutemailer />
+          <p><SiMinutemailer className='contact-icon' />
 Email: abigailtop95@yahoo.com</p>
         </div>
     
