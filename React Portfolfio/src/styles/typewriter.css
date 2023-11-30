@@ -5,6 +5,11 @@
     color:rgba(0, 0, 0, 0.603);
     
 }
+.app-container {
+    position: relative;
+  max-width: 1200px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the content */
+}
 
 .text-effect {
   display:flex;
